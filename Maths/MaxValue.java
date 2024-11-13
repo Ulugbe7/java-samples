@@ -1,5 +1,6 @@
 package Maths;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class MaxValue {
@@ -8,7 +9,7 @@ public class MaxValue {
      * Driver Code
      */
     public static void main(String[] args) {
-        Random rand = new Random();
+        Random rand = new SecureRandom();
 
         /* test 100 times using rand numbers */
         for (int i = 1; i <= 100; ++i) {

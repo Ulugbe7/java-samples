@@ -1,5 +1,6 @@
 package Sorts;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 
@@ -9,7 +10,7 @@ import java.util.Random;
  */
 public class BogoSort implements SortAlgorithm {
 
-    private static final Random random = new Random();
+    private static final Random random = new SecureRandom();
 
 
     private static <T extends Comparable<T>> boolean isSorted(T[] array) {
