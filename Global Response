@@ -1,0 +1,85 @@
+Response with list:
+{
+	"requestId": null,
+	"statusCode": 200,
+	"headers": {
+		"X-Total-Count": [
+			"0"
+		],
+		"Link": [
+			"<http://192.168.110.122:9999/api/organizations?page=-1&size=10>; rel=\"last\",<http://192.168.110.122:9999/api/organizations?page=0&size=10>; rel=\"first\""
+		],
+		"X-Content-Type-Options": [
+			"nosniff"
+		],
+		"X-XSS-Protection": [
+			"0"
+		],
+		"Cache-Control": [
+			"no-cache, no-store, max-age=0, must-revalidate"
+		],
+		"Pragma": [
+			"no-cache"
+		],
+		"Expires": [
+			"0"
+		],
+		"X-Frame-Options": [
+			"DENY"
+		],
+		"Content-Type": [
+			"application/json"
+		],
+		"Date": [
+			"Thu, 13 Feb 2025 11:35:12 GMT"
+		]
+	},
+	"responseBody": [],
+	"responseTime": 1739446512.266905000
+}
+
+Response with object:
+{
+	"requestId": "74fcff2e",
+	"statusCode": 200,
+	"headers": {
+		"X-Content-Type-Options": [
+			"nosniff"
+		],
+		"X-XSS-Protection": [
+			"0"
+		],
+		"Cache-Control": [
+			"no-cache, no-store, max-age=0, must-revalidate"
+		],
+		"Pragma": [
+			"no-cache"
+		],
+		"Expires": [
+			"0"
+		],
+		"X-Frame-Options": [
+			"DENY"
+		],
+		"Content-Type": [
+			"application/json"
+		],
+		"Date": [
+			"Thu, 13 Feb 2025 11:17:37 GMT"
+		]
+	},
+	"responseBody": {
+		"createdBy": null,
+		"createdDate": "2025-02-13T11:17:37.229332500Z",
+		"lastModifiedBy": null,
+		"lastModifiedDate": "2025-02-13T11:17:37.229332500Z",
+		"id": null,
+		"name": "Org",
+		"inn": "12345678901234",
+		"status": "ACTIVE",
+		"type": "BANK",
+		"directorFio": "Yusupov",
+		"phone": "998991234567"
+	},
+	"responseTime": 1739445457.244555000
+}
