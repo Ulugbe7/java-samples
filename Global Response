@@ -35,7 +35,7 @@ Response with list:
 		]
 	},
 	"responseBody": [],
-	"responseTime": 1739446512.266905000
+	"responseTime": "2025-02-13T12:50:39.378378300Z"
 }
 
 Response with object:
@@ -81,5 +81,5 @@ Response with object:
 		"directorFio": "Yusupov",
 		"phone": "998991234567"
 	},
-	"responseTime": 1739445457.244555000
+	"responseTime": "2025-02-13T12:50:39.378378300Z"
 }
