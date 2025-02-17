@@ -1,5 +1,6 @@
 package Searches;
 
+import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.Stream;
@@ -55,7 +56,7 @@ public class IterativeTernarySearch implements SearchAlgorithm {
 
     public static void main(String[] args) {
         //just generate data
-        Random r = new Random();
+        Random r = new SecureRandom();
         int size = 100;
         int maxElement = 100000;
         Integer[] integers = Stream.generate(() -> r.nextInt(maxElement))

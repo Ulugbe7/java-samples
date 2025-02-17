@@ -1,10 +1,11 @@
 package Maths;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Ceil {
     public static void main(String[] args) {
-        Random random = new Random();
+        Random random = new SecureRandom();
         for (int i = 1; i <= 1000; ++i) {
             double randomNumber = random.nextDouble();
             assert ceil(randomNumber) == Math.ceil(randomNumber);
