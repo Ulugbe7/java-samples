@@ -1,5 +1,6 @@
 package DataStructures.Buffers;
 
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -59,7 +60,7 @@ public class CircularBuffer {
 
     private static class TestWriteWorker implements Runnable {
         String _alphabet = "abcdefghijklmnopqrstuvwxyz0123456789";
-        Random _random = new Random();
+        Random _random = new SecureRandom();
         CircularBuffer _buffer;
 
         public TestWriteWorker(CircularBuffer cb) {
