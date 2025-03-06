@@ -1,6 +1,7 @@
 package MinimizingLateness;
 
 
+import io.github.pixee.security.BoundedLineReader;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -24,7 +25,7 @@ public class MinimizingLateness {
         StringTokenizer token;
 
         BufferedReader in = new BufferedReader(new FileReader("MinimizingLateness/lateness_data.txt"));
-        String ch = in.readLine();
+        String ch = BoundedLineReader.readLine(in, 5_000_000);
         if (ch == null || ch.isEmpty()) {
             in.close();
             return;
@@ -34,7 +35,7 @@ public class MinimizingLateness {
         System.out.println(indexCount); // number of operations
         Schedule[] array = new Schedule[indexCount]; // Create an array to hold the operation
         int i = 0;
-        while ((ch = in.readLine()) != null) {
+        while ((ch = BoundedLineReader.readLine(in, 5_000_000)) != null) {
             token = new StringTokenizer(ch, " ");
             // Include the time required for the operation to be performed in the array and the time it should be completed.
             array[i] = new Schedule(Integer.parseInt(token.nextToken()), Integer.parseInt(token.nextToken()));
